@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Users
+  p #{online_users.length} users online
+
+  ul
+  each online_user in online_users
+    li #{online_user}
